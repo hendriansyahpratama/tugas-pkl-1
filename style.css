@@ -1,11 +1,19 @@
 body{
-    background-color: deepskyblue;
+    background-color: rgb(38, 194, 24);
 }
 
 .kotak {
     width: 500px;
     height: 450px;
 
-    background-color:green;
-    border: 5px solid white;
+    background-color:rgb(155, 214, 18);
+    border: 5px solid black;
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color: black;
 }
