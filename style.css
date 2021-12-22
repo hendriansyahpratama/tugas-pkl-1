@@ -1,5 +1,5 @@
 body{
-    background-image: url(123.jpg);
+    background-image: url(1234.jpg);
     background-size: cover;
 }
 
@@ -7,14 +7,14 @@ body{
     width: 500px;
     height: 450px;
 
-    background-color:rgb(204, 62, 43);
+    background-color:rgb(22, 20, 20);
     border: 5px solid black;
 }
 
 h1{
-    color: black;
+    color: white;
 }
 
 h2{
-    color: black;
+    color: white;
 }
