@@ -1,12 +1,13 @@
 body{
-    background-color: rgb(38, 194, 24);
+    background-image: url(123.jpg);
+    background-size: cover;
 }
 
 .kotak {
     width: 500px;
     height: 450px;
 
-    background-color:rgb(155, 214, 18);
+    background-color:rgb(204, 62, 43);
     border: 5px solid black;
 }
 
