@@ -3,28 +3,29 @@ PERTAMA
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../script/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#324154] px-28 py-28">
-    <div class="bg-[#597298] rounded-lg flex">
-        <div class="w-8/12 flex flex-col items-center justify-center text-white text-[40px]">
-            <h1>Masukan Kartu Anda</h1>
+
+<body class="bg-blue-900 px-28 py-28">
+    <div class=" bg-gray-500 rounded-lg flex">
+        <div class="w-8/12 justify-end flex flex-col justify-center items-center text-[32pt] text-white font-mono ">
+            <h1>Silahkan Masukan Kartu Anda</h1>
             <hr class="border-2 w-8/12 my-5">
-            <h1>Please Insert Your Card</h1>
+            <h1>Please Insert Your Pin</h1>
         </div>
         <div>
-            <a href="./bahasa.html"><img src="../images/masukan-kartu.jpg" alt=""></a>
-            
+            <a class="" href="bahasa.html"><img src="../images/masukan-kartu.jpg" alt=""></a>
+
         </div>
     </div>
-    
 </body>
+
 </html>
 
 
@@ -33,45 +34,46 @@ PILIH BAHASA
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../script/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#324154] px-28 py-28">
-    <div class="bg-[#597298] rounded-lg flex">
-        <div class="w-10/12 flex flex-col justify-center text-white text-center text-4xl font-mono px-10 my-10 space-y-10">
+
+<body class="bg-blue-900 px-28 py-28">
+    <div class=" bg-gray-600 rounded-lg flex">
+        <div
+            class="text-white font-mono w-8/12 flex flex-col justify-center text-center text-4xl my-10 px-10 space-y-10">
             <div class="flex flex-col items-center space-y-5">
-                <h1>Silahkan Pilih Bahasa Anda</h1>
+                <p>Silahkan Pilih Bahasa Anda</p>
                 <hr class="border-2 w-[700px]">
-                <h1>Please Select Your Language</h1>
+                <p>Please Select Your Language</p>
             </div>
-            <div class="space-y-5 text-2xl mr-[240px]">
-                <div class="flex justify-end">
-                    <a href="./pin.html">INDONESIA >></a>
-                </div>
-                <div class="flex justify-end cursor-pointer">
-                    <p onclick="alert(`Fitur Ini Tidak Tersedia`)">INGGRIS >></p>
-                </div>
-                <div class="flex justify-end">
-                    <a href="./index.html">CANCEL >></a>
-                </div>
+            <div class="text-3xl ml-[550px] space-y-5 cursor-pointer">
+                <a href="pin.html">
+                    <p>INDONESIA >></p>
+                </a>
+                <p onclick="alert(`Fitur Ini Tidak Tersedia! - Feature Not Available`)">INGGRIS >></p>
+                <a href="index.html">
+                    <p class="mt-[20px] text-red-500">CANCEL >></p>
+                </a>
+
             </div>
             <div class="flex flex-col items-center space-y-5">
-                <h1>To Obtain Card Press "CANCEL"</h1>
+                <p>To Obtain Card Press "CANCEL"</p>
                 <hr class="border-2 w-[700px]">
-                <h1>Tekan "CANCEL" Untuk Membatalkan</h1>
+                <p>Tekan "CANCEL" Untuk Membatalkan</p>
             </div>
         </div>
-        <div class="flex justify-center items-center">
-            <img class="rounded-lg w-[80%]" src="../images/pilih-bahasa.png" alt="">
+        <div>
+            <img src="../images/pilih-bahasa.png" alt="">
         </div>
     </div>
-    
 </body>
+
 </html>
 
 
@@ -81,6 +83,7 @@ PIN
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -88,32 +91,32 @@ PIN
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#324154] px-28 py-10 h-[100vh] flex items-center justify-center">
-    <div class="bg-[#597298] rounded-lg flex">
-        <div class="w-8/12 flex flex-col items-center justify-center text-white text-center text-[25pt] font-mono px-10 gap-[20px]">
-            <h1>Silahkan Masukan Pin Anda</h1>
-            <div class="flex space-x-10">
-                <input class="w-[250px] rounded-md text-center text-black" type="text" id="pin" placeholder="Masukan Pin">
-               <button onclick="masuk()">ENTER >></button>
-                <a href="./bahasa.html"><button class="text-red-600">CANCEL>></button></a>
-                
-            </div>
-            <h1>Please Insert Your Pin</h1>
-        </div>
-        <img src="../images/masukan-pin.jpg" alt="">
-    </div>
 
+<body class="bg-blue-900 px-28 py-28">
+    <div class="bg-gray-600 rounded-lg flex">
+        <div class="w-8/12 text-white flex justify-center items-center flex-col gap-[20px] text-[32pt] font-mono">
+            <h1>Silahkan Masukan Pin Anda</h1>
+            <div>
+                <input class="text-black" type="password" id="pin">
+                <button onclick="masuk()">ENTER>></button>
+                <a href="bahasa.html"><button class="text-red-500">CANCEL>></button></a>
+            </div>
+            <h1>Tekan "CANCEL" Untuk Membatalkan</h1>
+        </div>
+        <img class="rounded-r-lg" src="../images/masukan-pin.jpg" alt="">
+    </div>
 
     <script src="../script/script.js"></script>
 </body>
-</html>
 
+</html>
 
 
 NOMINAL
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -121,31 +124,37 @@ NOMINAL
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#324154] px-28 py-28 ">
-    <div class="bg-[#597298] rounded-lg flex w-[150vh] ml-[150px] mt-[50px]">
-        <div class="flex text-center flex-col mt-[60px] text-white font-bold text-[30px] gap-[50px] font-mono">
-            <h1 class="text-[30pt] ml-[100px]">Silahkan Pilih Paket Nominal</h1>
-            <div class="flex flex-row justify-center gap-[100px] ml-[100px]">
-                <div class="flex flex-col gap-[20px] cursor-pointer">
-                    <p onclick="tunai(cash.seratus)"><- 100.000</p>
-                     <p onclick="tunai(cash.duaratus)"><- 200.000</p>
-                      <p onclick="tunai(cash.tigaratus)"><- 300.000</p>
-                       <p><- Nominal Lain</p>
+
+<body class="bg-blue-900 px-28 py-28">
+    <div class="bg-gray-600 rounded-lg flex">
+        <div class="w-8/12 text-white flex justify-center items-center flex-col text-[23pt] gap-[50px] font-mono">
+            <h1 class="space-y-5 text-5xl">Silahkan Pilih Paket Nominal</h1>
+            <div class="flex flex-row gap-[100px] cursor-pointer">
+                <div class="space-y-5">
+                    <p onclick="tunai(cash.seratus)">
+                        <- 100.000</p>
+                            <p onclick="tunai(cash.duaratus)">
+                                <- 200.000</p>
+                                    <p onclick="tunai(cash.tigaratus)">
+                                        <- 300.000</p>
+                                        <a  href="pecahan.html"><p class="mt-[20px]">
+                                            <- Nominal Lain</p></a>
+                                            
                 </div>
-                <div class="flex flex-col gap-[20px] cursor-pointer">
+                <div class="space-y-5">
                     <p onclick="tunai(cash.limaratus)">500.000 -></p>
                     <p onclick="tunai(cash.satujuta)">1.000.000 -></p>
-                    <p onclick="tunai(cash.satusetengah)">1.500.000 -></p>
-                    <p onclick="alert(`Fitur Tidak Tersedia`)">Transaksi -> Lain</p>
+                    <p onclick="tunai(cash.satujutasetengah)">1.500.000 -></p>
+                    <p onclick="alert(`Fitur Tidak Tersedia!`)">Transaksi Lain -></p>
                 </div>
             </div>
         </div>
-        <img class="h-[600px] w-[500px] ml-[300px]" src="../images/ambil-uang.jpg" alt="">
+        <img class="rounded-r-lg" src="../images/withdraw-money.jpg" alt="">
     </div>
-
 
     <script src="../script/script.js"></script>
 </body>
+
 </html>
 
 
@@ -162,22 +171,19 @@ PECAHAN
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#324154] px-28 py-10 h-[100vh] flex items-center justify-center">
-    <div class="bg-[#597298] rounded-lg flex">
-        <div
-            class="w-8/12 flex flex-col items-center justify-center text-white text-center text-[25pt] font-mono px-10 gap-[30px]">
-            <h1>Masukan Pecahan 50.000 atau 100.000</h1>
-            <div class="flex space-x-8">
-                <input class="w-[300px] rounded-md text-center text-black" type="text" id="pecahan"
-                    placeholder="MASUKAN PIN">
-                <button onclick="pecah()">ENTER>></button>
-                <a class="text-red-700" href="./nominal.html"><button>CANCEL>></button></a>
+<body class="bg-blue-900 px-28 py-28">
+    <div class="bg-gray-600 rounded-lg flex">
+        <div class="w-8/12 text-white flex justify-center items-center flex-col gap-[20px] text-[32pt] font-mono">
+            <h1 class="flex text-center">Masukan Jumlah Nominal Pecahan 100.000 dan 50.000</h1>
+            <div>
+                <input class="text-black" type="text" id="pecahan">
+                <button class="text-green-500" onclick="pecahan()">ENTER>></button>
+                <a href="nominal.html"><button class="text-red-500">CANCEL>></button></a>
             </div>
-            <h1>PECAHAN</h1>
+            <h1>Tekan "CANCEL" Untuk Membatalkan</h1>
         </div>
-        <img src="../images/withdraw-money.jpg" alt="">
+        <img class="rounded-r-lg" src="../images/withdraw-money.jpg " alt="">
     </div>
-
 
     <script src="../script/script.js"></script>
 </body>
@@ -192,63 +198,49 @@ const input = document.getElementById('pin')
 const pecah = document.getElementById('pecahan')
 
 const pw = 123
-let saldo = 10000000 //10jt
+let saldo = 1000000 //1jt
 
 const cash = {
     seratus: 100000,
-    duaratus: 200000,
-    tigaratus: 300000,
-    limaratus: 500000,
-    satujuta: 1000000,
-    satusetengah: 1500000,
+     duaratus: 200000,
+      tigaratus: 300000,
+       limaratus: 500000,
+        satujuta: 1000000,
+         satujutasetengah: 1500000,
 }
 
 function masuk(){
     if(input.value == pw){
         window.location.href = 'nominal.html'
-    } else if(input.value == 0){
-        alert('pin tidak boleh kosong')
+        alert('Login Berhasil')
+    } else if(input.value.length == 0){
+        alert('Pin Tidak Boleh Kosong')
     } else{
-        alert('pin anda salah')
+        alert('Pin Salah')
     }
 }
 
 function tunai(value){
-    if(saldo >= value && confirm('anda akan menarik '+ value)== true){
+    if(saldo >= value && confirm('yakin anda akan menarik sebesar '+ value)== true){
         saldo = saldo - value
-        alert(`anda akan menarik ${value} sisa saldo anda ${saldo}`)
+        window.location.href = 'index.html'
+        alert(`anda menarik sebesar ${value} sisa saldo anda ${saldo}`)
+    } else if(saldo < value){
+        alert('Saldo Anda Tidak Cukup')
     }
 }
 
-// 
-
-function pecahan(value){
+function pecahan (value){
     if(pecah.value == 0){
-        alert('silahkan masukan nominal')
+        alert('Masukan Nominal Anda')
     } else if(saldo < pecah.value){
-        alert('saldo anda tidak mencukupi')
-    } else if (pecah.value % 100000 == 0 || pecah.value % 50000 == 0){
-        alert(`anda berhasil menarik saldo sebesar ${pecah.value}, sisa saldo anda ${saldo -= pecah.value}`)
+        alert('Saldo Anda Tidak Cukup')
+    } else if(pecah.value % 50000 == 0){
+        alert(`anda akan menarik sebesar ${pecah.value} sisa saldo anda sebesar ${saldo -= pecah.value}`)
+        window.location.href = 'ambilkartu.html'
     } else{
-        alert('maaf pecahan tidak tersedia')
+        alert('Pecahan Tidak Tersedia')
     }
 }
-
-
-
-// function pecahan(value){
-//     if(saldo > pecahan.value){
-//         if(pecah.value % 50000 == 0 || pecah.value % 100000 == 0) {
-//             const popUp = confirm(`anda akan menarik sebesar ${pecahan.value} sisa saldo anda tersisa ${saldo - pecah.value}`)
-//             if(popUp == true){
-//                 window.location.href = 'index.html'
-//             }
-//         } else {
-//             alert('pecahan tidak sesuai')
-//         }
-//     } else{
-//         alert('saldo anda kurang')
-//     }
-// }
 
 
